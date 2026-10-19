@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>مهامي</h1>
+
+      <div class="input-row">
+        <input type="text" placeholder="مهمة جديدة" id="addTask" />
+
+        <input type="button" value="+" id="addButton" />
+      </div>
+
+      <div class="task-list">
+        <ul id="taskList">
+          <div class="actions"></div>
+        </ul>
+      </div>
+    </div>
+    <!-- Edit Task Box -->
+    <div id="editModal" style="display: none">
+      <div class="modal-content">
+        <h3>تعديل المهمة</h3>
+        <input type="text" id="editTaskInput" />
+        <div class="editActions">
+          <button id="saveEditBtn">حفظ</button>
+          <button id="closeModalBtn">إلغاء</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
